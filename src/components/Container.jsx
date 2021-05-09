@@ -170,7 +170,7 @@ const Container=()=>{
 
  const [amountField,setAmountField] = useState();
 
-  console.log(amountField);
+//   console.log(amountField);
  const fieldEvent=(e)=>{
  
    setAmountField(e.target.value);
@@ -178,25 +178,25 @@ const Container=()=>{
 
  }
 
- const requestReimburse=()=>{
+//  const requestReimburse=()=>{
 
-  setList((oldValues)=>{
+//   setList((oldValues)=>{
 
     
       
-     return  [...oldValues,{  
-      id:"l",
-      Date:"33th April,2020",
-      Requested:"23th Mar,2020",
-      Type:"Accomodation",
-      Reason:"Company Work",
-      Amount:582000,
-      Attachment:12,
-      ReasonDialog:"",
-      Status:'Accepted'
-      }];
-  });
- }
+//      return  [...oldValues,{  
+//       id:"l",
+//       Date:"33th April,2020",
+//       Requested:"23th Mar,2020",
+//       Type:"Accomodation",
+//       Reason:"Company Work",
+//       Amount:582000,
+//       Attachment:12,
+//       ReasonDialog:"",
+//       Status:'Accepted'
+//       }];
+//   });
+//  }
 
 
 
@@ -230,14 +230,14 @@ function FullList(val){
 
   const [finalType,setFinalType] = useState(val.Type);
 
-  function handleRemove(id) {
+  // function handleRemove(id) {
   
-    const newList = list.filter((val) => val.id !== id);
+  //   const newList = list.filter((val) => val.id !== id);
    
-    setList(newList);
+  //   setList(newList);
     
-    console.log(id);
-  }
+  //   console.log(id);
+  // }
    
   // oneAmount=val.Amount;
   // twoAmount=val.Amount;
@@ -249,17 +249,18 @@ return(
  
   <>
  <tr key={val.id}>
- <td   >{finalDate}</td>
- <td >{val.Requested}</td>
+ <td   className="nowrap">{finalDate}</td>
+ <td  className="nowrap">{val.Requested}</td>
  <td className="oddColor" Selected >{finalType}</td>
  <td className="nowrap oddColor">{val.Reason}</td>
  <td className="oddColor" >{finalAmount}</td>
  <td><Attachment>{val.Attachment} </Attachment></td>
  <td className="nowrap" style={{ cursor:'pointer', textDecoration:'underline'}}onClick={()=>ReasonHandleShow()}>{val.ReasonDialog}</td>
- <td><Status onClick={requestReimburse} >{val.Status}</Status></td>
+ <td><Status  >{val.Status}</Status></td>
  <td className="editIcon" onChange={()=>setMoney(val.Amount)} onClick={()=>handleShow(val.Amount,val.Type,val.Date)}><AiOutlineEdit /></td>
- <td className="deleteIcon" id='btn-del' onClick={() => handleRemove(val.id)}  ><AiOutlineDelete /></td>
+ <td className="deleteIcon" id='btn-del'  ><AiOutlineDelete /></td>
  
+ {/* onClick={() => handleRemove(val.id)}   it is in the last  <td>*/}
  </tr>
   </>
 
@@ -312,7 +313,7 @@ return(
   <thead className="table-thread">
     <tr className="table-thread">
       <th scope="col" className="nowrap">Date</th>
-      <th scope="col" >Requested on</th>
+      <th scope="col" className="nowrap">Requested on</th>
       <th scope="col">Type</th>
       <th scope="col">Reason</th>
       <th scope="col">Amount</th>
@@ -421,7 +422,10 @@ return(
 
    <label for="file" className="file-container"> <AiOutlinePlusCircle className="plus" /> <span class="file-text">Add new File </span> <input  type="file" id="file" name="file" multiple /></label>
     <ul className="fileList"></ul>
-   <button type="button" class="btn btn-style  btn-block btn-aside" onClick={requestReimburse}>Request Reimbursement</button>
+   <button type="button" className=" btn-style  btn-block btn-aside" >Request Reimbursement</button>
+    
+   {/* onClick={requestReimburse} it is in the request reimbursement button */}
+
     </div>
     
     </div>
