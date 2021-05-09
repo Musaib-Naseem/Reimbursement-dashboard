@@ -1,0 +1,62 @@
+.lightOrange{
+
+width:70px;
+height:25px;
+background-color:#fff1de !important;
+padding:20px 10px;
+border-radius:10px;
+
+}
+
+.lightGreen{
+
+    width:70px;
+height:25px;
+    background-color:#e4fff8;
+    padding:20px;
+    
+    }
+
+    .lightRed{
+
+        width:70px;
+height:25px;
+    background-color:#feeeee;
+    padding:20px;
+   
+        
+        }
+
+    .darkOrange{
+
+        color:#feba01;
+        
+    }
+
+    .darkGreen{
+
+        color:#40d2ad;
+    }
+
+    .darkRed{
+
+        color:#f16b6a;
+    }
+
+
+    .btn {
+        padding: 6px 8px;
+        border-radius: 6px;
+        font-size:10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        white-space:nowrap;
+        
+      }
+
+      .btn:hover{
+
+        color:grey;
+
+      }

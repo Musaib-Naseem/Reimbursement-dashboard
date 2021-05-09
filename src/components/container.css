@@ -1,0 +1,433 @@
+body{
+
+background-color:#f7f7f9;
+
+}
+
+p{
+   line-height:100px;
+   float:left;
+}
+
+.fa-inr{
+
+font-size:15px;
+color:#425dd2;
+border-left:1px solid lightgrey;
+border-right:1px solid lightgrey;
+padding-left:5px;
+padding-right:5px;
+font-weight:bold;
+
+}
+
+.header-text-left{
+
+    font-family: 'DM Sans', sans-serif;
+    font-size:22px;
+    font-weight:bold;
+
+}
+
+
+.header-text-right{
+
+color:#96959a;
+float:right;
+
+
+}
+
+.box{
+background-color:#fff;
+border-radius:8px;
+margin:20px 0;
+padding:0 35px;
+
+}
+
+.box-right{
+
+background-color:#f7f7f9;
+border-radius:10px;
+margin:30px 0;
+padding:0 30px;
+margin-left:0px;
+
+
+}
+
+.table-heading{
+
+font-size:20px;
+color:#444444;
+font-weight:bold;
+margin-top:10px;
+
+}
+
+.aside-heading{
+
+    font-size:17px;
+    font-weight:bold;
+    color:#444444;
+    margin-top:-15px;
+    height:80px;
+
+
+}
+
+.table-thread{
+
+    border-top:none !important;
+
+}
+
+.input-text{
+
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #d4d4d6;
+    outline:none;
+    margin-bottom:30px;
+    
+}
+
+.date-picker{
+
+    width:100% !important;
+    background:red;
+
+}
+
+.input-label{
+
+    color:#99989e;
+    font-weight:bold;
+    
+    
+}
+
+.input-label-type{
+
+    color:#99989e;
+    font-weight:bold;
+    margin-top:-20px ;
+    
+    
+    
+}
+
+::placeholder {
+    color: #232325;
+    
+
+  }
+
+  input{
+
+    width:100%;
+  }
+
+  select {
+    background-color: transparent;
+    border:none;
+    border-bottom:1px solid #d4d4d6;
+    
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+  }
+
+  .inval{ 
+    color: #232325;
+    font-weight:700 !important;
+     }
+
+
+   input[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+
+
+  .input-date{
+
+    cursor:pointer;
+    background-color:transparent !important;
+
+  }
+
+  DatePicker{
+      width:100%;
+  }
+
+  .plus{
+  font-size:25px;
+  color:#ffbd2e;
+  font-weight:bold;
+  cursor:pointer;
+
+  }
+
+  .file-text{
+    color:#ffbd2e;
+    font-weight:bold;
+    cursor:pointer;
+
+  }
+
+  .btn-style{
+
+    background-color:#40d2ad;
+    color:#fff;
+    font-size:13px;
+    margin-top:15px;
+    padding:10px 20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    
+  }
+
+  .dialog-btn-style{
+
+    background-color:#40d2ad;
+    color:#fff;
+    font-size:13px;
+    margin-top:15px;
+    padding:10px 20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    float:right;
+    outline:none;
+    
+  }
+
+  .dialog-btn-style:hover{
+    background-color:#21876d;
+    color:#fff !important;
+  }
+
+  .dialog-close-btn-style{
+    font-size:13px;
+    margin-top:-2px;
+    padding:10px 20px;
+   float:left !important;
+   
+  }
+
+  .dialog-close-btn-style:hover{
+    color:#fff !important;
+  }
+
+  .btn-style:hover{
+
+    color:white;
+  }
+
+  .hide{
+
+    height:0px;
+    width:0px;
+
+  }
+
+
+  .file-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer !important;
+}
+
+    .file-container input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: pointer;
+        display: block;
+    }
+  
+    table{
+
+        width:90% !important;
+        margin-left:-15px;
+        padding:10px;
+
+    }
+
+    thead{
+
+        border:none !important;
+    }
+
+    
+   th{
+       font-size:16px;
+       color:#d4d4d6;
+       padding-top:13px !important;
+       padding-bottom:13px !important;
+   }
+
+   td{
+    font-size:14px;
+    color:#767676;
+    padding-top:13px !important;
+    padding-bottom:13px !important;
+}
+
+.nowrap{
+
+    white-space:nowrap;
+}
+
+.oddColor{
+
+    color:#161c28;
+
+}
+
+.editIcon{
+    font-size:15px;
+    cursor:pointer;
+}
+
+.deleteIcon{
+    font-size:15px;
+    cursor:pointer;
+}
+
+.btn-aside{
+
+  padding:10px 12px !important;
+  font-size:14px !important;
+}
+
+.your-dialog-classname {
+  display: block !important; 
+  width: 300px !important;
+  height:300px !important; 
+  padding-left: 0px;
+}
+
+.borderNone{
+
+  border:none !important;
+  padding-top:50px !important;
+  padding-left:40px !important;
+  padding-right:40px !important;
+}
+
+.padding-all{
+  padding-left:40px !important;
+  padding-right:40px !important;
+  /* padding-bottom:50px !important; */
+
+}
+
+.btn:focus {
+  outline: none !important;
+  border:none !important;
+}
+
+.borderNone-footer{
+  
+  padding-bottom:30px !important;
+  border:none !important;
+  padding-left:40px !important;
+  padding-right:40px !important;
+
+}
+
+.dialog-close-btn-style:focus,.dialog-close-btn-style:active {
+  
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dialog-btn-style:focus,.dialog-btn-style:active {
+  background-color:#40d2ad !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.reason-dialog-header{
+
+  font-weight:bold;
+}
+
+.reason-dialog-button{
+
+  color:#f4a21b;
+  background-color:transparent !important;
+  border:none;
+  outline:none;
+  padding:12px 15px;
+  border-radius:8px;
+  
+
+}
+
+.reason-dialog-size{
+
+  height:600px !important;
+  width:600px !important;
+  scroll:none;
+  margin-right:200px !important;
+}
+
+.container-padding{
+
+  padding-left:50px !important;
+  padding-right:50px !important;
+}
+
+@media only screen and (max-width:786px){
+
+.table-margin{
+
+  margin-top:150px !important;
+  
+}
+
+.center-align{
+
+  text-align:center !important;
+  
+}
+
+.header-float-left{
+
+  float:left;
+}
+
+.input-label-type{
+
+  
+  margin-top:10px !important;
+  
+}
+}
+
+
+@media only screen and (max-width:990px){
+
+
+  .input-label-type{
+
+  
+    margin-top:80px !important;
+    
+    margin-left:-180px;
+    
+    
+}
+
+  }
